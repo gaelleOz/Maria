@@ -1,0 +1,144 @@
+*, ::before, ::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Abel', sans-serif;
+  height: 100%;
+  background-color: #FBEEDA
+}
+
+.custom-toggler  {
+  margin-right: 10px;
+}
+
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.text-pizza {
+  font-size: 20px;
+  text-align: center;
+  margin: 150px;
+}
+
+@media (max-width: 768px) {
+  .text-pizza {
+    font-size: 16px;
+    margin: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .text-pizza {
+    font-size: 14px;
+    margin: 30px;
+  }
+}
+
+.navbar {
+  background-color: #FBEEDA;
+  font-size: 18px;
+  margin: 0 auto;
+  padding: 0;
+}
+.navbar a {
+  color: black;
+  text-decoration: none;
+  font-family: 'Abel', sans-serif;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+}
+
+.nav-link {
+  color:red;
+}
+
+h2 {
+  margin-bottom: 0px;
+}
+
+.pizza-image {
+  animation-name: rotatePizza; /* Nom de l'animation */
+  animation-duration: 4s; /* Durée de l'animation */
+  animation-iteration-count: infinite; /* Animation en boucle */
+  animation-timing-function: linear; /* Fonction de temporisation (linéaire pour une rotation constante) */
+}
+
+@keyframes rotatePizza {
+  0% {
+    transform: rotate(0deg); /* Angle de départ */
+  }
+  100% {
+    transform: rotate(360deg); /* Angle de fin (une rotation complète) */
+  }
+}
+
+.card-img-top {
+  width: 50%;
+  height: 40%;
+  object-fit: cover;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #D9A08B;
+}
+.contact{
+  margin-bottom: 1rem;
+}
+
+.circle-icon {
+  display: inline-block;
+    width: 50px; /* Ajustez la taille du cercle selon vos besoins */
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    line-height: 50px;
+    margin: 5px;
+    background-color: #FBEEDA /* Espace entre les icônes */
+}
+
+.fab {
+  font-size: 20px;
+  color: black;
+}
+
+.rotate-image {
+  transform: rotate(90deg);
+}
+
+
+footer {
+  background-color: #c69279;
+  font-size: 18px;
+  margin: 0 auto;
+  padding: 40px;
+  margin-top: 30px;
+  border-top: 0.5px solid #f7d298;
+  font-family: 'Abel', sans-serif;
+}
+
+
+.copyright {
+  text-align: center;
+  margin-bottom: 0px;
+  font-family: 'Abel', sans-serif;
+}

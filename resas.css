@@ -97,3 +97,30 @@ footer {
   margin-bottom: 0px;
   font-family: 'Abel', sans-serif;
 }
+
+.link {
+  color: black;
+  text-decoration: none;
+  font-family: 'Abel', sans-serif;
+  border: 1px solid #c69279;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 40px;
+  background-color: #FBEEDA;
+}
+
+.button-book {
+  text-align:center;
+  margin-top: 50px;
+}
+
+.link:hover {
+  color: #D9A08B;
+  font-family: 'Abel', sans-serif;
+}
+
+.text-resa {
+  font-family: 'Abel', sans-serif;
+  font-size: 30px;
+  margin: 80px;
+}

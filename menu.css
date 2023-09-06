@@ -91,9 +91,13 @@ p {
   margin: 0 auto;
 }
 
-.nav-link {
-  color:red;
+
+.navbar a:hover {
+  text-decoration: none;
+  font-family: 'Abel', sans-serif;
+  font-size: 23px;
 }
+
 .navbar a {
   color: black;
   text-decoration: none;
@@ -104,6 +108,16 @@ p {
   font-size: 80px;
   font-family: "Nixie one";
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.carte_2 {
+  font-size: 80px;
+  font-family: "Nixie one";
+  height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,6 +203,14 @@ h6 {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.product-image-beer {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: solid 1px #c69279;
   margin-bottom: 10px;
 }
 

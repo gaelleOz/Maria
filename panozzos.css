@@ -27,10 +27,18 @@ body{
 }
 
 .text-pizza {
-  font-size: 20px;
+  font-size: 40px;
   text-align: center;
-  margin: 150px;
+  margin-top: 150px;
 }
+
+.text-pizza-2 {
+  font-size: 30px;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 100px;
+}
+
 
 @media (max-width: 768px) {
   .text-pizza {
@@ -62,12 +70,28 @@ body{
   margin: 0 auto;
 }
 
-.nav-link {
-  color:red;
+.navbar a:hover {
+  text-decoration: none;
+  font-family: 'Abel', sans-serif;
+  font-size: 23px;
 }
+
 
 h2 {
   margin-bottom: 0px;
+}
+
+.banner {
+  background-image: url("resources/Rostello.jpg");
+  background-position: 40% 35%;
+  background-size: cover;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+
 }
 
 .pizza-image {

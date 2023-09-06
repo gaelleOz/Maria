@@ -60,14 +60,14 @@
       <div class="carte">
         <p class="text-center">La carte de MARIA.</p>
         <p class="text-center">Fraîcheur, créativité et beaucoup d'amour!</p>
-        <div class="bounce-arrow text-center">
+        <div class="bounce-arrow text-center" id="scroll-to-menu">
           <i class="fas fa-chevron-down"></i>
         </div>
       </div>
-
+      <div id="menu" class="carte_2 text-center">LA CARTE</div>
       <div class="container-menu">
 
-        <div class="category category-item" id="div-01">
+        <div class="category category-item" id="div-01" >
           <p>Apéro</p>
         </div>
 
@@ -262,18 +262,18 @@
           </div>
 
           <div class="product-card d-flex align-items-center">
-            <img src="resources/cannoli.jpg" alt="Photo de glace" class="product-image pizza">
+            <img src="resources/cannoli.jpg" alt="Photo de cannoli" class="product-image pizza">
             <div class="d-flex flex-column ms-5">
               <div class="d-flex align-items-center justify-content-between">
-                <h4>Cannoli</h4>
+                <h4>Une paire de Cannoli</h4>
                 <h4>4,50€</h4>
               </div>
-              <h5>Toppings de dingue!</h5>
+              <h5>La célèbre gourmandise sicilienne... </h5>
             </div>
           </div>
 
           <div class="product-card d-flex align-items-center">
-            <img src="resources/dessert.jpg" alt="Photo de glace" class="product-image">
+            <img src="resources/dessert.jpg" alt="Photo de dessert" class="product-image">
             <div class="d-flex flex-column ms-5">
               <div class="d-flex align-items-center justify-content-between">
                 <h4>Dessert du jour</h4>
@@ -292,7 +292,7 @@
         <div class="product-list d-none">
 
           <div class="product-card d-flex align-items-center">
-            <img src="resources/IMG_7923.jpg" alt="Photo de glace" class="product-image">
+            <img src="resources/IMG_7923.jpg" alt="Photo de cocktail" class="product-image">
             <div class="d-flex flex-column ms-5">
               <div class="d-flex align-items-center justify-content-between">
                 <h4>Spritz</h4>
@@ -303,7 +303,7 @@
           </div>
 
           <div class="product-card d-flex align-items-center">
-            <img src="resources/IMG_7923.jpg" alt="Photo de glace" class="product-image">
+            <img src="resources/IMG_7923.jpg" alt="Photo de cocktail" class="product-image">
             <div class="d-flex flex-column ms-5">
               <div class="d-flex align-items-center justify-content-between">
                 <h4>Hugo</h4>
@@ -313,7 +313,7 @@
             </div>
           </div>
           <div class="product-card d-flex align-items-center">
-            <img src="resources/cocktail-day.jpg" alt="Photo de glace" class="product-image">
+            <img src="resources/cocktail-day.jpg" alt="Photo de cocktail" class="product-image">
             <div class="d-flex flex-column ms-5">
               <div class="d-flex align-items-center justify-content-between">
                 <h4>Cocktail du jour</h4>
@@ -332,29 +332,29 @@
         <div class="product-list d-none">
 
           <div class="product-card d-flex align-items-center">
-            <img src="resources/sun.jpeg" alt="Photo de glace" class="product-image">
+            <img src="resources/hotel-dieu-gose-sour-33-cl-la-canute-lyonnaise.jpg" alt="Photo de l'hotel dieu bière" class="product-image-beer">
             <div class="d-flex flex-column ms-5">
               <div class="d-flex align-items-center justify-content-between">
-                <h4>Sun of a Beach</h4>
+                <h4>Hôtel dieu</h4>
                 <h4>5€</h4>
               </div>
-              <h5>Blonde IPA, houblonnée et légère</h5>
+              <h5>Sour, Bière acide Berliner Weiss, brassée à la betterave</h5>
             </div>
           </div>
 
           <div class="product-card d-flex align-items-center">
-            <img src="resources/tchiki.jpeg" alt="Photo de glace" class="product-image">
+            <img src="resources/confluence-belgian-blonde-33-cl-la-canute-lyonnaise.jpg" alt="Photo de la confluence" class="product-image-beer">
             <div class="d-flex flex-column ms-5">
               <div class="d-flex align-items-center justify-content-between">
-                <h4>Tchiki Boom</h4>
+                <h4>Confluence</h4>
                 <h4>5€</h4>
               </div>
-              <h5>Blanche, goût de céréale, herbacée</h5>
+              <h5>Blonde d’inspiration Belge, notes de malt</h5>
             </div>
           </div>
 
           <div class="product-card d-flex align-items-center">
-            <img src="resources/Photo 28-04-2021 12 29 46.jpg" alt="Photo de glace" class="product-image">
+            <img src="resources/Photo 28-04-2021 12 29 46.jpg" alt="Photo de la peroni" class="product-image">
             <div class="d-flex flex-column ms-5">
               <div class="d-flex align-items-center justify-content-between">
                 <h4>Peroni</h4>
@@ -371,7 +371,7 @@
         </div>
         <div class="product-list d-none">
           <div class="product-card d-flex align-items-center">
-            <img src="resources/IMG_7923.jpg" alt="Photo de glace" class="product-image">
+            <img src="resources/IMG_7923.jpg" alt="Photo de vins" class="product-image">
             <div class="d-flex flex-column ms-5">
               <div class="d-flex align-items-center justify-content-between">
                 <h4>Sélection de vins locaux et italiens</h4>
@@ -508,6 +508,16 @@
           $('.navbar-collapse').toggleClass('show');
         });
       });
+      document.addEventListener('DOMContentLoaded', function () {
+    // Sélectionnez l'élément avec l'ID "scroll-to-menu"
+    var scrollToMenu = document.getElementById('scroll-to-menu');
+
+    // Ajoutez un gestionnaire d'événements au clic sur la flèche
+    scrollToMenu.addEventListener('click', function () {
+        // Faites défiler la page jusqu'à la section avec l'ID "menu"
+        document.getElementById('menu').scrollIntoView({ behavior: 'smooth' });
+    });
+});
     </script>
   </body>
 

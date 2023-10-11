@@ -14,6 +14,10 @@ body{
   background-color: #FBEEDA;
 }
 
+.row {
+  --bs-gutter-x: 0rem;
+}
+
 .custom-toggler  {
   margin-right: 10px;
 }
@@ -89,6 +93,31 @@ body{
   color: black;
   margin-top: 100px;
   background-color:#D9A08B;
+}
+
+@media (max-width: 767px) {
+  .bienvenue{
+    font-size: 50px !important;
+  }
+  .dicton{
+    font-size: 35px !important;
+    margin-top: 20px !important;
+  }
+  .container-pizza{
+    margin-top: 400px !important;
+    padding: 20px !important;
+  }
+  .text-resa{
+    margin: 0 !important
+  }
+  .food{
+    margin-top: 0 !important;
+    justify-content: space-around !important;
+  }
+  .text-devant-2{
+    margin: 10px;
+  }
+
 }
 
 .btn-pizzas-2 {

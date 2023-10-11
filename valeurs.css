@@ -18,7 +18,6 @@ body{
   margin-right: 10px;
 }
 
-
 .fixed-navbar {
   position: fixed;
   top: 0;
@@ -64,6 +63,7 @@ body{
 
 .container-photo-info img{
   height: 300px;
+  width: 300px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -109,7 +109,6 @@ body{
 .navbar-nav {
   margin: 0 auto;
 }
-
 
 .navbar a:hover {
   text-decoration: none;
@@ -177,33 +176,44 @@ hr {
   margin-bottom: 20px;
 }
 
+.hr-2 {
+  border: 3px solid #D9A08B;
+  display: block;
+  margin: 0 auto; /* Exemple de style de ligne */
+}
+
 .copyright {
   text-align: center;
   margin-bottom: 0px;
   font-family: 'Abel', sans-serif;
 }
 
-
 @media (max-width: 767px) {
-  .p-0 {
-    padding: 0;
+  h2{
+    font-size: 25px !important;
   }
-  .text {
-    text-align: center;
+  p{
+    font-size: 16px !important;
+    margin: 15px !important;
   }
-  .mb-4 {
-    margin-bottom: 1.5rem;
+  .carte-info {
+    height: auto;
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    margin: 0px;
   }
-}
-
-@media (max-width: 991px) {
-  .titre-section-info {
-    font-size: 30px;
+  .pate {
+    max-width: 100%; /* Réduire la largeur de l'image pour les écrans mobiles */
   }
-  .p-5 {
-    padding: 3rem;
+  div{
+    max-width: 100% !important;
   }
-  .p-4 {
-    padding: 2rem;
+  .row {
+    margin-left: 0px !important;
+  }
+  .container-fluid {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
   }
 }

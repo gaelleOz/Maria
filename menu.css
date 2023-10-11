@@ -16,6 +16,7 @@ body{
 .custom-toggler  {
   margin-right: 10px;
 }
+
 .fixed-navbar {
   position: fixed;
   top: 0;
@@ -107,7 +108,6 @@ p {
 .carte {
   font-size: 80px;
   font-family: "Nixie one";
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,18 +124,24 @@ p {
   flex-direction: column;
 }
 
-@media (max-width: 768px) {
-  .carte {
-    font-size: 60px;
-  }
-}
-
 @media (max-width: 576px) {
   .carte {
     font-size: 40px;
+    margin-top: 80px;
+  }
+  #menu {
+    margin-top: 30px;
   }
 }
 
+@media (min-width: 768px) {
+  .carte {
+    font-size: 60px;
+    height: 80vh;
+    margin-top: 60px;
+    font-size: 40px;
+  }
+}
 .bounce-arrow {
   animation: bounce 1s infinite;
 }
@@ -203,7 +209,10 @@ h6 {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  margin-bottom: 10px;
+}
+
+.burrata {
+  background-size: cover;
 }
 
 .product-image-beer {

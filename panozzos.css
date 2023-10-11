@@ -42,15 +42,8 @@ body{
 
 @media (max-width: 768px) {
   .text-pizza {
-    font-size: 16px;
-    margin: 50px;
-  }
-}
-
-@media (max-width: 576px) {
-  .text-pizza {
-    font-size: 14px;
-    margin: 30px;
+    font-size: 36px;
+    margin: 60px;
   }
 }
 

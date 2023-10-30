@@ -101,7 +101,7 @@ body{
 
 .navbar {
   background-color: #FBEEDA;
-  font-size: 18px;
+  font-size: 20px;
   margin: 0 auto;
   padding: 0;
 }
@@ -177,7 +177,7 @@ hr {
 }
 
 .hr-2 {
-  border: 3px solid #D9A08B;
+  border: 2px solid #D9A08B;
   display: block;
   margin: 0 auto; /* Exemple de style de ligne */
 }

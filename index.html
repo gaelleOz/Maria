@@ -234,7 +234,7 @@
 
   const button = document.querySelector(".funky");
   const originalText = button.innerHTML;
-  const hoverImage = "/resources/funky.png";
+  const hoverImage = "resources/funky.png";
   const imageElement = document.querySelector('.image-element');
   const videoPlayer = document.querySelector('.video-player');
   const videoWrapper = document.querySelector('.video-wrapper');
@@ -244,7 +244,7 @@
     button.innerHTML = "<img class='funky-image' src='" + hoverImage + "' alt='Funky Image'><p>Ambiance toi!</p>";
     imageElement.style.display = 'none';
     videoWrapper.classList.remove('d-none');
-    rightBlock.innerHTML = "<video class='video-player' autoplay loop><source src='/resources/fullbody_.MP4' type='video/mp4'></video>";
+    rightBlock.innerHTML = "<video class='video-player' autoplay loop><source src='resources/fullbody_.MP4' type='video/mp4'></video>";
     videoPlayer.pause(); // Pause la vidéo si elle était en lecture
   });
 

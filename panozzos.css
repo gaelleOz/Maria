@@ -78,12 +78,11 @@ h2 {
   background-image: url("resources/Rostello.jpg");
   background-position: 40% 35%;
   background-size: cover;
-  height: 40vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 60px;
 
 }
 

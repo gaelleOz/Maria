@@ -304,12 +304,11 @@ border: 4px solid #f7d298;
 }
 
 .pizza {
-  width: 200px;
-  height: 200px;
-  background-color: #c69279;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   position: relative;
-  animation: rotateAndMove 8s linear infinite;
+  animation: rotateAndMove 10s linear infinite;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -317,51 +316,14 @@ border: 4px solid #f7d298;
   margin-bottom: 50px;
 }
 
-.slice {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  position: absolute;
-  border-width: 90px 40px;
-}
-
-#slice1 {
-  border-color: transparent transparent #5B613A transparent;
-  transform: rotate(30deg);
-}
-
-#slice2 {
-  border-color: transparent transparent #f7d298 transparent;
-  transform: rotate(90deg);
-}
-
-#slice3 {
-  border-color: transparent transparent #5B613A transparent;
-  transform: rotate(150deg);
-}
-
-#slice4 {
-  border-color: transparent transparent #f7d298  transparent;
-  transform: rotate(210deg);
-}
-
-#slice5 {
-  border-color: transparent transparent #5B613A transparent;
-  transform: rotate(270deg);
-}
-
-#slice6 {
-  border-color: transparent transparent #f7d298 transparent;
-  transform: rotate(330deg);
-}
-
-
 @keyframes rotateAndMove {
   0% {
-    transform: translateX(0);
+    transform: translateX(0) rotate(0deg);
+
   }
   100% {
-    transform:  translateX(100vw);
+    transform:  translateX(100vw) rotate(360deg);
+
   }
 }
 

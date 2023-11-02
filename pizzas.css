@@ -160,3 +160,21 @@ footer {
   margin-bottom: 0px;
   font-family: 'Abel', sans-serif;
 }
+
+a:visited {
+  color: black;
+}
+
+a {
+  color: black;
+}
+
+.section-button {
+  color: black; /* Couleur du texte par défaut */
+}
+
+/* Styles pour les boutons après avoir été cliqués */
+.section-button:active,
+.section-button:focus { /* Vous pouvez ajouter :focus si nécessaire */
+  color: black; /* Couleur du texte lorsque le bouton est activé */
+}

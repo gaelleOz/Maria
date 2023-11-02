@@ -151,7 +151,8 @@
     <div class="row">
       <div class="col-md-4 d-flex flex-column justify-content-start align-items-center align-md-start">
         <p class="pb-2 text-center">Nous trouver:</p>
-        <p class="text-center">1,3 rue des pierres plantées<br>69001 LYON</p>
+        <p class="text-center"><a class="nav-link-footer"
+          href="https://www.google.com/maps?q=1+rue+des+pierres+plantées,+69001+Lyon" target="_blank">1,3 rue des pierres plantées<br>69001 LYON</a></p>
       </div>
 
       <div class="col-md-4 d-flex justify-content-center">
@@ -234,7 +235,11 @@
   const rightBlock = document.querySelector('.right-block');
 
   button.addEventListener("mouseenter", function () {
-    button.innerHTML = "<img class='funky-image' src='" + hoverImage + "' alt='Funky Image'><p>Ambiance toi!</p>";
+   button.innerHTML = `
+      <div class='d-flex align-items-center'>
+        <img class='funky-image' src='${hoverImage}' alt='Funky Image'>
+        <p class='m-0'>Ambiance toi!</p>
+      </div>`;
     imageElement.style.display = 'none';
     videoWrapper.classList.remove('d-none');
     rightBlock.innerHTML = "<video class='video-player' autoplay loop><source src='resources/fullbody_.MP4' type='video/mp4'></video>";

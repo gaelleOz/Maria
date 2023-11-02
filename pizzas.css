@@ -151,6 +151,9 @@ footer {
   font-family: 'Abel', sans-serif;
 }
 
+.day {
+  margin-right: 10px;
+}
 
 .copyright {
   text-align: center;

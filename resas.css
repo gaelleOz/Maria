@@ -180,7 +180,10 @@ footer {
   margin-top: 30px;
   border-top: 0.5px solid #f7d298;
   font-family: 'Abel', sans-serif;
+}
 
+.day {
+  margin-right: 10px;
 }
 
 .copyright {

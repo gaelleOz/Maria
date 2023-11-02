@@ -402,6 +402,9 @@ footer a:hover {
   margin-bottom: 100px;
 }
 
+.day {
+  margin-right: 10px;
+}
 
 .copyright {
   text-align: center;

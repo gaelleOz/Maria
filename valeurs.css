@@ -169,6 +169,10 @@ footer {
   font-family: 'Abel', sans-serif;
 }
 
+.day {
+  margin-right: 10px;
+}
+
 hr {
   border-top: 2px solid #D9A08B;
   width: 50%;

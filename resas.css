@@ -95,7 +95,7 @@ body{
   background-color:#D9A08B;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 1284px) {
   .bienvenue{
     font-size: 50px !important;
   }

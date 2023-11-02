@@ -46,9 +46,17 @@ p {
 .container-menu {
   background-color: #FBEEDA;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #5B613A;
   transition: padding 0.3s ease;
+  width: 800px;
+  display: block;
+  margin: 0 auto;
   margin-top: 60px;
   margin-bottom: 100px;
+}
+
+#menu {
+  height:100px;
 }
 
 .container-menu.no-padding {
@@ -59,7 +67,6 @@ p {
 
 .category {
  height: 80px;
- width: 100%;
  display:flex;
  justify-content: center;
  align-items: center;
@@ -68,14 +75,17 @@ p {
 
 .category-item {
   cursor: pointer;
-  font-family: 'Abel', sans-serif;
-  padding: 10px;
+  font-family: "Nixie one";
+  padding: 30px;
   margin: 40px 0;
   font-weight: bold;
   font-size: 40px;
   background-color: #c69279;
   border-bottom: 1px solid #c69279;
   transition: background-color 0.3s ease;
+  width: 250px;
+  text-align: center; /* Centrez le texte horizontalement */
+  margin: 40px auto;
 }
 
 .category-item:hover {
@@ -112,6 +122,14 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-image: url("resources/home.jpg");
+  background-position: 20% 48%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  color:#ffffff;
+  height: 100vh;
+  padding-bottom: 70px;
 }
 
 .carte_2 {
@@ -124,23 +142,42 @@ p {
   flex-direction: column;
 }
 
-@media (max-width: 576px) {
-  .carte {
-    font-size: 40px;
-    margin-top: 80px;
-  }
-  #menu {
-    margin-top: 30px;
-  }
+.txt-banner {
+  font-size: 80px;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 1200px) {
   .carte {
-    font-size: 60px;
-    height: 80vh;
-    margin-top: 60px;
-    font-size: 40px;
+    height: 600px;
+    margin-top: 20px;
+    width: 100%;
+    background-position: 20% -101%;
   }
+  .container-menu {
+    background-color: #FBEEDA;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #5B613A;
+    transition: padding 0.3s ease;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+  .txt-banner {
+    font-size: 50px;
+    letter-spacing: 0.09em;
+    margin: 0;
+  }
+  .txt-banner-2 {
+    display:none;
+  }
+  .carte_2 {
+    font-size: 30px;
+    height: 30vh;
+    margin-top: 20px;
+    width: 100%;
+  }
+
 }
 .bounce-arrow {
   animation: bounce 1s infinite;
@@ -268,7 +305,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #D9A08B;
+  color:#FBEEDA;
 }
 
 .contact{

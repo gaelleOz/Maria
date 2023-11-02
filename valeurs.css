@@ -135,10 +135,9 @@ footer a {
   text-decoration: none;
 }
 
-footer a:hover{
-  color: #D9A08B;
+footer a:hover {
+  color:#FBEEDA;
 }
-
 .contact{
   margin-bottom: 1rem;
 }
@@ -239,4 +238,3 @@ a {
 .section-button:focus { /* Vous pouvez ajouter :focus si nécessaire */
   color: black; /* Couleur du texte lorsque le bouton est activé */
 }
-

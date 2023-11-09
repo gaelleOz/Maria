@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <head>
@@ -16,259 +15,275 @@
   <script src="https://kit.fontawesome.com/270f96d986.js" crossorigin="anonymous"></script>
   <title>Maria.</title>
 </head>
+
 <body>
-<nav class="navbar navbar-expand-lg navbar-light">
-  <a href="index.html">
-    <div class="ps-4">
-      <h4 class="navbar-brand text-center fs-4 pb-0 fw-bold">MARIA.</h4>
-      <h4 class="navbar-brand fs-5 pt-0">Lyon Croix-Rousse</h4>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a href="index.html">
+      <div class="ps-4">
+        <h4 class="navbar-brand text-center fs-4 pb-0 fw-bold">MARIA.</h4>
+        <h4 class="navbar-brand fs-5 pt-0">Lyon Croix-Rousse</h4>
+      </div>
+    </a>
+    <button class="navbar-toggler pe-2 custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav d-flex align-items-center gap-4 ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="index.html">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="menu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="pizzas.html">Nos pizzas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="panozzos.html">Nos panozzos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="valeurs.html">Nos valeurs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="resas.html">Réservations</a>
+        </li>
+        <li class="blinking">
+          <button class="funky d-none d-lg-block" href="#">Funky button</button>
+        </li>
+      </ul>
     </div>
-  </a>
-  <button class="navbar-toggler pe-2 custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav d-flex align-items-center gap-4 ml-auto">
-      <li class="nav-item">
-        <a class="nav-link text-dark" href="index.html">Accueil</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-dark" href="menu.html">Menu</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-dark" href="pizzas.html">Nos pizzas</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-dark" href="panozzos.html">Nos panozzos</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-dark" href="valeurs.html">Nos valeurs</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-dark" href="resas.html">Réservations</a>
-      </li>
-      <li class="blinking">
-        <button class="funky d-none d-lg-block" href="#">Funky button</button>
-      </li>
-    </ul>
-  </div>
-</nav>
+  </nav>
 
 
-<div class="text-center custom-container">
-  <div class="row d-flex">
-    <div class="col-md-6 col-sm-12 col-xs-12 d-flex flex-column">
-      <h1 class="maria" id="maria-heading" style="opacity: 0;">MARIA.</h1>
-      <p class="lead">Pizza Napolitaine.</p>
-      <div class="d-grid gap-2 btn-container align-self-center d-flex flex-column">
-        <a href="pizzas.html" class="btn btn-outline-dark btn-lg">Nos pizzas</a>
-        <a href="https://widget.guestplan.com/?i=92e2f0b61aa55a26d1b8204be4ae5b2f5feda90f" target="_blank"
-          class="btn btn-outline-dark btn-lg">Réserver</a>
+  <div class="text-center custom-container">
+    <div class="row d-flex">
+      <div class="col-md-6 col-sm-12 col-xs-12 d-flex flex-column">
+        <h1 class="maria" id="maria-heading" style="opacity: 0;">MARIA.</h1>
+        <p class="lead">Pizza Napolitaine.</p>
+        <div class="d-grid gap-2 btn-container align-self-center d-flex flex-column">
+          <a href="pizzas.html" class="btn btn-outline-dark btn-lg">Nos pizzas</a>
+          <a href="https://widget.guestplan.com/?i=92e2f0b61aa55a26d1b8204be4ae5b2f5feda90f" target="_blank"
+            class="btn btn-outline-dark btn-lg">Réserver</a>
+        </div>
+      </div>
+
+
+      <div class="col-md-6 col-sm-12 col-xs-12 d-flex align-items-end justify-content-end right-block">
+        <img src="resources/vierge.jpg" alt="vierge" class="img-fluid image-element" id="image-element">
       </div>
     </div>
-
-
-    <div class="col-md-6 col-sm-12 col-xs-12 d-flex align-items-end justify-content-end right-block">
-      <img src="resources/vierge.jpg" alt="vierge" class="img-fluid image-element" id="image-element">
+    <div class="col-md-6 col-sm-12 col-xs-12 d-flex align-items-end justify-content-end" id="video-player">
+      <div class="video-wrapper d-none" id="video-wrapper">
+        <video class="video-player">
+          <source src="resources/fullbody_.MP4" type="video/mp4">
+          Votre navigateur ne prend pas en charge la lecture de vidéos.
+        </video>
+      </div>
     </div>
   </div>
-  <div class="col-md-6 col-sm-12 col-xs-12 d-flex align-items-end justify-content-end" id="video-player">
-    <div class="video-wrapper d-none" id="video-wrapper">
-      <video class="video-player">
-        <source src="resources/fullbody_.MP4" type="video/mp4">
-        Votre navigateur ne prend pas en charge la lecture de vidéos.
-      </video>
+  <section>
+    <div class="container-fluid">
+      <div class="p-4 text-devant">
+        <h2 class="pt-5 pb-0 mb-0 bienvenue">Maria.</h2>
+        <h3 class="pt-3 pb-5 text-center">Sur place ou à emporter.</h3>
+      </div>
     </div>
-  </div>
-</div>
-<section>
-  <div class="container-fluid">
-    <div class="p-4 text-devant">
-      <h2 class="p-5 bienvenue">Maria.</h2>
+    <div class="pizza-container">
+      <img class="pizza" src="resources/sanita-menu.png" alt="pizza">
+      <img class="pizza" src="resources/posilippo.png" alt="pizza">
+      <img class="pizza" src="resources/marianella.png" alt="pizza">
+      <img class="pizza" src="resources/ponticelli.png" alt="pizza">
+      <img class="pizza" src="resources/mergellina.png" alt="pizza">
+      <img class="pizza" src="resources/capo-menu.png" alt="pizza">
+      <img class="pizza" src="resources/Pizzadustaff.png" alt="pizza">
       <img class="pizza" src="resources/vomero.png" alt="pizza">
-      <p class="text-center">Une expérience culinaire italienne inoubliable au cœur de la Croix-Rousse !</p>
-      <p class="text-center">Nous sommes ravis de vous accueillir dans notre pizzeria napolitaine chaleureuse et
-        conviviale, où nous mettons à l'honneur l'héritage de la véritable pizza napolitaine.</p>
     </div>
-  </div>
-  <div class="p-0">
-    <img src="resources/pate.jpg" class="pate">
-  </div>
-</section>
-<section>
-  <div class="row d-flex p-0">
-    <h1 class="bienvenue text-center hidden">Notre philosophie</h1>
-    <div class="col-md-6 align-items-stretch ps-0 pe-0">
-      <img src="resources/fond2.jpg" alt="Image" class="img-fluid img-equal-size">
+    <div class="container-fluid">
+      <div class="p-4 text-devant">
+    <p class="text-center">Une expérience culinaire italienne inoubliable au cœur de la Croix-Rousse !</p>
+    <p class="text-center">Nous sommes ravis de vous accueillir dans notre pizzeria napolitaine chaleureuse et
+      conviviale, où nous mettons à l'honneur l'héritage de la véritable pizza napolitaine.</p>
     </div>
-    <div class="col-md-6 food ps-0 pe-0">
-      <p class="dicton">MANGER</p>
-      <p class="dicton">BOIRE</p>
-      <p class="dicton">SAVOURER</p>
-      <p class="text-devant-2 hidden">
-        Selection d'ingrédients frais et savoureux.
-      </p>
-      <p class="text-devant-2 hidden">
-        Pâte légère et aérée.
-      </p>
-      <p class="text-devant-2 hidden">
-        Garnitures généreuses et authentiques.
-      </p>
-      <div class="btn-container mt-3 ms-2">
-        <a href="pizzas.html" class="btn btn-outline-dark btn-pizzas-2">Nos pizzas</a>
+    </div>
+    <div class="p-0">
+      <img src="resources/pate.jpg" class="pate">
+    </div>
+  </section>
+  <section>
+    <div class="row d-flex p-0">
+      <h1 class="bienvenue text-center hidden">Notre philosophie</h1>
+      <div class="col-md-6 align-items-stretch ps-0 pe-0">
+        <img src="resources/fond2.jpg" alt="Image" class="img-fluid img-equal-size">
+      </div>
+      <div class="col-md-6 food ps-0 pe-0">
+        <p class="dicton">MANGER</p>
+        <p class="dicton">BOIRE</p>
+        <p class="dicton">SAVOURER</p>
+        <p class="text-devant-2 hidden">
+          Selection d'ingrédients frais et savoureux.
+        </p>
+        <p class="text-devant-2 hidden">
+          Pâte légère et aérée.
+        </p>
+        <p class="text-devant-2 hidden">
+          Garnitures généreuses et authentiques.
+        </p>
+        <div class="btn-container mt-3 ms-2">
+          <a href="pizzas.html" class="btn btn-outline-dark btn-pizzas-2">Nos pizzas</a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="row d-flex p-0">
-    <h2 class="text-center bienvenue hidden">La pure tradition italienne</h2>
-    <div class="col-md-6 food ps-0 pe-0">
-      <p class="dicton hidden">VOYAGER</p>
-      <p class="dicton hidden">APPRENDRE</p>
-      <p class="dicton hidden">PARTAGER</p>
-      <p class="text-devant-3">
-        Formation à Naples.
-      </p>
-      <p class="text-devant-3">
-        Pâte légère et aérée.
-      </p>
-      <p class="text-devant-3">
-        Garnitures généreuses et authentiques.
-      </p>
-      <div class="btn-container mt-3 text-end me-3">
-        <a href="valeurs.html" class="btn btn-outline-dark btn-pizzas-2">Nos valeurs</a>
+    <div class="row d-flex p-0">
+      <h2 class="text-center bienvenue hidden">La pure tradition italienne</h2>
+      <div class="col-md-6 food ps-0 pe-0">
+        <p class="dicton hidden">VOYAGER</p>
+        <p class="dicton hidden">APPRENDRE</p>
+        <p class="dicton hidden">PARTAGER</p>
+        <p class="text-devant-3">
+          Formation à Naples.
+        </p>
+        <p class="text-devant-3">
+          Pâte légère et aérée.
+        </p>
+        <p class="text-devant-3">
+          Garnitures généreuses et authentiques.
+        </p>
+        <div class="btn-container mt-3 text-end me-3">
+          <a href="valeurs.html" class="btn btn-outline-dark btn-pizzas-2">Nos valeurs</a>
+        </div>
+      </div>
+      <div class="col-md-6 align-items-stretch ps-0 pe-0">
+        <img src="resources/IMG_1489.JPG" alt="Image" class="img-fluid img-equal-size">
       </div>
     </div>
-    <div class="col-md-6 align-items-stretch ps-0 pe-0">
-      <img src="resources/IMG_1489.JPG" alt="Image" class="img-fluid img-equal-size">
-    </div>
-  </div>
-</section>
+  </section>
 
-<footer>
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-4 d-flex flex-column justify-content-start align-items-center align-md-start">
-        <p class="pb-2 text-center">Nous trouver:</p>
-        <p class="text-center"><a class="nav-link-footer"
-          href="https://www.google.com/maps?q=1+rue+des+pierres+plantées,+69001+Lyon" target="_blank">1,3 rue des pierres plantées<br>69001 LYON</a></p>
-      </div>
+  <footer>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-4 d-flex flex-column justify-content-start align-items-center align-md-start">
+          <p class="pb-2 text-center">Nous trouver:</p>
+          <p class="text-center"><a class="nav-link-footer"
+              href="https://www.google.com/maps?q=1+rue+des+pierres+plantées,+69001+Lyon" target="_blank">1,3 rue des
+              pierres plantées<br>69001 LYON</a></p>
+        </div>
 
-      <div class="col-md-4 d-flex justify-content-center">
-        <ul class="list-unstyled text-center text-md-start">
-          <li class="pb-2 contact text-center">Nous contacter:</li>
-          <div>
-            <li><a href="mailto:maria.restaurantlyon@gmail.com">maria.restaurantlyon@gmail.com</a></li>
-            <li class="text-center"><a class="nav-link text-dark" href="tel:06 64 87 90 85">0664879085</a></li>
-            <div class="text-center">
-              <div class="circle-icon">
-                <a href="https://www.instagram.com/maria.restaurant/" target="_blank"><i class="fab fa-instagram fa-lg"
-                    style="color:black"></i></a>
-              </div>
-              <div class="circle-icon">
-                <a href="https://www.facebook.com/maria.restaurantlyon/" target="_blank"><i class="fab fa-facebook-f"
-                    style="color: black"></i></a>
+        <div class="col-md-4 d-flex justify-content-center">
+          <ul class="list-unstyled text-center text-md-start">
+            <li class="pb-2 contact text-center">Nous contacter:</li>
+            <div>
+              <li><a href="mailto:maria.restaurantlyon@gmail.com">maria.restaurantlyon@gmail.com</a></li>
+              <li class="text-center"><a class="nav-link text-dark" href="tel:06 64 87 90 85">0664879085</a></li>
+              <div class="text-center">
+                <div class="circle-icon">
+                  <a href="https://www.instagram.com/maria.restaurant/" target="_blank"><i
+                      class="fab fa-instagram fa-lg" style="color:black"></i></a>
+                </div>
+                <div class="circle-icon">
+                  <a href="https://www.facebook.com/maria.restaurantlyon/" target="_blank"><i class="fab fa-facebook-f"
+                      style="color: black"></i></a>
+                </div>
               </div>
             </div>
-          </div>
-        </ul>
-      </div>
-      <div class="col-md-4 d-flex flex-column justify-content-center align-items-center align-md-start">
-        <p class="pb-2">Horaires d'ouverture:</p>
-        <div class="d-flex flex-column gap-2">
-          <div class="d-flex justify-content-between">
-            <span class="day">Lun:</span>
-            <div>12h-14h / 19h-22h</div>
-          </div>
-          <div class="d-flex justify-content-between">
-            <span class="day">Mar:</span>
-            <div>Fermé</div>
-          </div>
-          <div class="d-flex justify-content-between">
-            <span class="day">Mer:</span>
-            <div>Fermé</div>
-          </div>
-          <div class="d-flex justify-content-between">
-            <span class="day">Jeu:</span>
-            <div>12h-14h / 19h-22h</div>
-          </div>
-          <div class="d-flex justify-content-between">
-            <span class="day">Ven:</span>
-            <div>12h-14h / 19h-22h</div>
-          </div>
-          <div class="d-flex justify-content-between">
-            <span class="day">Sam:</span>
-            <div>12h-14h / 19h-22h</div>
-          </div>
-          <div class="d-flex justify-content-between">
-            <span class="day">Dim:</span>
-            <div>12h-14h / 19h-22h</div>
+          </ul>
+        </div>
+        <div class="col-md-4 d-flex flex-column justify-content-center align-items-center align-md-start">
+          <p class="pb-2">Horaires d'ouverture:</p>
+          <div class="d-flex flex-column gap-2">
+            <div class="d-flex justify-content-between">
+              <span class="day">Lun:</span>
+              <div>12h-14h / 19h-22h</div>
+            </div>
+            <div class="d-flex justify-content-between">
+              <span class="day">Mar:</span>
+              <div>Fermé</div>
+            </div>
+            <div class="d-flex justify-content-between">
+              <span class="day">Mer:</span>
+              <div>Fermé</div>
+            </div>
+            <div class="d-flex justify-content-between">
+              <span class="day">Jeu:</span>
+              <div>12h-14h / 19h-22h</div>
+            </div>
+            <div class="d-flex justify-content-between">
+              <span class="day">Ven:</span>
+              <div>12h-14h / 19h-22h</div>
+            </div>
+            <div class="d-flex justify-content-between">
+              <span class="day">Sam:</span>
+              <div>12h-14h / 19h-22h</div>
+            </div>
+            <div class="d-flex justify-content-between">
+              <span class="day">Dim:</span>
+              <div>12h-14h / 19h-22h</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 text-center p-5 copyright">
-      <p>© 2023 MARIA. Tous droits réservés.</p> Créé par Gaëlle OZANON
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center p-5 copyright">
+        <p>© 2023 MARIA. Tous droits réservés.</p> Créé par Gaëlle OZANON
+      </div>
     </div>
   </div>
-</div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>
-  $(document).ready(function () {
-    $("#maria-heading").animate({ opacity: 1 }, 4000);
-  });
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#maria-heading").animate({ opacity: 1 }, 4000);
+    });
 
-  const button = document.querySelector(".funky");
-  const originalText = button.innerHTML;
-  const hoverImage = "resources/funky.png";
-  const imageElement = document.querySelector('.image-element');
-  const videoPlayer = document.querySelector('.video-player');
-  const videoWrapper = document.querySelector('.video-wrapper');
-  const rightBlock = document.querySelector('.right-block');
+    const button = document.querySelector(".funky");
+    const originalText = button.innerHTML;
+    const hoverImage = "resources/funky.png";
+    const imageElement = document.querySelector('.image-element');
+    const videoPlayer = document.querySelector('.video-player');
+    const videoWrapper = document.querySelector('.video-wrapper');
+    const rightBlock = document.querySelector('.right-block');
 
-  button.addEventListener("mouseenter", function () {
-   button.innerHTML = `
+    button.addEventListener("mouseenter", function () {
+      button.innerHTML = `
       <div class='d-flex align-items-center'>
         <img class='funky-image' src='${hoverImage}' alt='Funky Image'>
         <p class='m-0'>Ambiance toi!</p>
       </div>`;
-    imageElement.style.display = 'none';
-    videoWrapper.classList.remove('d-none');
-    rightBlock.innerHTML = "<video class='video-player' autoplay loop><source src='resources/fullbody_.MP4' type='video/mp4'></video>";
-    videoPlayer.pause(); // Pause la vidéo si elle était en lecture
-  });
-
-  rightBlock.addEventListener("click", function () {
-    videoPlayer.play(); // Démarre la lecture de la vidéo au survol du rightBlock
-  });
-
-  window.addEventListener('scroll', function () {
-    var navbar = document.querySelector('.navbar');
-    var scrollY = window.pageYOffset;
-
-    if (scrollY > 0) {
-      navbar.classList.add('fixed-navbar');
-    } else {
-      navbar.classList.remove('fixed-navbar');
-    }
-  });
-  $(document).ready(function () {
-    $('.navbar-toggler').click(function () {
-      $('.navbar-collapse').toggleClass('show');
+      imageElement.style.display = 'none';
+      videoWrapper.classList.remove('d-none');
+      rightBlock.innerHTML = "<video class='video-player' autoplay loop><source src='resources/fullbody_.MP4' type='video/mp4'></video>";
+      videoPlayer.pause(); // Pause la vidéo si elle était en lecture
     });
-  });
 
-</script>
+    rightBlock.addEventListener("click", function () {
+      videoPlayer.play(); // Démarre la lecture de la vidéo au survol du rightBlock
+    });
 
-</script>
+    window.addEventListener('scroll', function () {
+      var navbar = document.querySelector('.navbar');
+      var scrollY = window.pageYOffset;
+
+      if (scrollY > 0) {
+        navbar.classList.add('fixed-navbar');
+      } else {
+        navbar.classList.remove('fixed-navbar');
+      }
+    });
+    $(document).ready(function () {
+      $('.navbar-toggler').click(function () {
+        $('.navbar-collapse').toggleClass('show');
+      });
+    });
+
+  </script>
+
+  </script>
 </body>
 
 </html>

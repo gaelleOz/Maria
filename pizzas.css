@@ -75,10 +75,13 @@ h2 {
 
 @media (max-width: 768px) {
   .text-pizza {
-    margin: 50px;
+    margin: 30px;
   }
   .banner {
     margin-bottom: 0px;
+  }
+  .card-price {
+    margin-bottom: 50px;
   }
 }
 

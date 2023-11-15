@@ -175,7 +175,7 @@ body{
   background-color: #5B613A;
   color: #FBEEDA;
   animation: colorBlink 6s infinite;
-  padding: 8px;
+  padding: 16px;
   border-radius: 50px; /* Durée totale = 6s (3 couleurs * 2s chacune) */
 }
 

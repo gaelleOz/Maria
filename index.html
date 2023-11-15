@@ -262,7 +262,7 @@
     const videoWrapper = document.querySelector('.video-wrapper');
     const rightBlock = document.querySelector('.right-block');
 
-    button.addEventListener("mouseenter", function () {
+    button.addEventListener("click", function () {
       button.innerHTML = `
       <div class='d-flex align-items-center'>
         <img class='funky-image' src='${hoverImage}' alt='Funky Image'>
@@ -274,9 +274,9 @@
       videoPlayer.pause(); // Pause la vidéo si elle était en lecture
     });
 
-    rightBlock.addEventListener("click", function () {
-      videoPlayer.play(); // Démarre la lecture de la vidéo au survol du rightBlock
-    });
+    // rightBlock.addEventListener("click", function () {
+    //   videoPlayer.play(); // Démarre la lecture de la vidéo au survol du rightBlock
+    // });
 
     window.addEventListener('scroll', function () {
       var navbar = document.querySelector('.navbar');

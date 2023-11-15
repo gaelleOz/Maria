@@ -32,12 +32,6 @@ body{
   margin: 150px;
 }
 
-@media (max-width: 768px) {
-  .text-pizza {
-    margin: 50px;
-  }
-}
-
 @media (max-width: 576px) {
   .text-pizza {
     margin: 30px;
@@ -77,6 +71,15 @@ h2 {
   height: 100vh; /* Définit une hauteur maximale de 100vh */
   overflow: hidden;
   margin-bottom: 200px;
+}
+
+@media (max-width: 768px) {
+  .text-pizza {
+    margin: 50px;
+  }
+  .banner {
+    margin-bottom: 0px;
+  }
 }
 
 #lectureVideo {

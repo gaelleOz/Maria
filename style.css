@@ -238,8 +238,7 @@ h2, h4 {
 }
 .video-container {
   width: 100%;
-  max-width: 600px; /* Ajustez la largeur maximale selon vos besoins */
-  border: 4px solid #f7d298; /* Ajoutez cette ligne en utilisant la couleur du conteneur */
+  max-width: 600px; /* Ajustez la largeur maximale selon vos besoins *//* Ajoutez cette ligne en utilisant la couleur du conteneur */
 }
 
 .video-player {

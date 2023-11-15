@@ -35,7 +35,6 @@ body{
 .text-pizza-2 {
   font-size: 30px;
   text-align: center;
-  font-style: italic;
   margin-bottom: 100px;
 }
 
@@ -75,7 +74,7 @@ h2 {
 }
 
 .banner {
-  background-image: url("resources/Rostello.jpg");
+  background-image: url("resources/spianata.jpg");
   background-position: 40% 35%;
   background-size: cover;
   height: 60vh;

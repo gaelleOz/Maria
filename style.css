@@ -107,7 +107,7 @@ body{
   opacity: 0.8;
 }
 .btn-outline-dark {
-  color: whitesmoke;
+  color: black;
   border-color: #c69279;
   background-color: #c69279;
   font-size: 30px;
@@ -393,7 +393,7 @@ z-index: 0;
 .btn-pizzas-2 {
   font-family: 'Abel', sans-serif;
   font-size: 30px;
-  color:white;
+  color:black;
   border-color: #c69279;
   background-color: #c69279;
   margin-top: 50px;

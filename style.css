@@ -1,0 +1,581 @@
+*, ::before, ::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Abel', sans-serif;
+  height: 100%;
+  background-color: #e1c6b7;
+}
+
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+
+.custom-container {
+  height: 90vh;
+  background-position: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.custom-toggler  {
+  margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+  .title {
+    text-align: center !important;
+  }
+  .right-block {
+    justify-content: center !important;
+  }
+  .bienvenue {
+    font-size: 60px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  .dicton {
+    font-size: 40px !important;
+  }
+  .text-devant-2 {
+    padding:10px;
+    font-size: 20px;
+  }
+  .btn-pizzas-2 {
+    text-align: center !important;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .maria {
+    text-align: center !important;
+    font-size: 80px !important;
+    margin-top: 20px !important;
+  }
+  .lead {
+    text-align: center !important;
+    font-size: 60px !important;
+    margin-right: 0px !important;
+  }
+  div{
+    max-width: 100%;
+  }
+  .row {
+    margin-left: 0px !important;
+  }
+  .custom-container {
+    height: auto;
+    padding: 0rem !important;
+  }
+  .text-devant {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .custom-container {
+    height: auto;
+    padding: 2rem;
+  }
+  .title {
+    text-align: center !important;
+  }
+  .right-block {
+    justify-content: center !important;
+    margin-top: 2rem;
+  }
+  }
+
+.bg-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80%;
+  opacity: 0.8;
+}
+.btn-outline-dark {
+  color: black;
+  border-color: #c69279;
+  background-color: #c69279;
+  font-size: 30px;
+}
+
+.row .img-equal-size {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.center-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+}
+
+.maria {
+  font-size: 180px;
+  font-weight: bold;
+  color: black;
+  margin-top: 130px;
+}
+
+
+.lead {
+  font-size: 60px;
+  color: black;
+}
+
+.navbar {
+  background-color: #FBEEDA;
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  font-family: 'Abel', sans-serif;
+}
+
+
+.navbar-nav {
+  margin: 0 auto;
+}
+
+.navbar a:hover {
+  text-decoration: none;
+  font-family: 'Abel', sans-serif;
+  font-size: 23px;
+}
+
+
+.funky {
+  font-family: 'Abel', sans-serif;
+  font-weight: bold;
+  margin: 10px;
+  cursor: pointer;
+  border: 0;
+  font-size: 22px;
+  background-color: #5B613A;
+  color: #FBEEDA;
+  animation: colorBlink 6s infinite;
+  padding: 16px;
+  border-radius: 50px; /* Durée totale = 6s (3 couleurs * 2s chacune) */
+}
+
+@keyframes colorBlink {
+  0%, 25% {
+    background-color: #5B613A ;
+    color: #e1c6b7;
+  }
+  25%, 50% {
+    background-color: #e1c6b7;
+    color: #5B613A;
+  }
+  50%, 75% {
+    background-color: #5B613A ;
+    color: #e1c6b7;
+  }
+  75%, 100% {
+    background-color: #e1c6b7;
+    color: #5B613A;
+  }
+}
+
+.funky-image {
+  /* Ajoutez ici les styles souhaités pour l'image */
+  width: 60px;
+  color: black;
+  transform: rotate(250deg);
+}
+
+h2, h4 {
+  margin-bottom: 0px;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+
+}
+
+
+.circle-icon {
+  display: inline-block;
+  width: 30px; /* Ajustez la taille du cercle selon vos besoins */
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  line-height: 50px;
+  margin: 3px;
+  background-color: #FBEEDA /* Espace entre les icônes */
+}
+
+.fab {
+  font-size: 20px;
+  color: black;
+}
+.video-container {
+  width: 100%;
+  max-width: 600px; /* Ajustez la largeur maximale selon vos besoins *//* Ajoutez cette ligne en utilisant la couleur du conteneur */
+}
+
+.video-player {
+width: 100%;
+height: 100%;
+object-fit: contain;
+z-index: 0;
+}
+
+.recrute {
+  background-color: #FBEEDA;
+  padding: 30px 30px 30px 30px;
+  font-size: 50px;
+}
+
+.poste {
+  background-color: #FBEEDA;
+  padding: 0px 30px 30px 30px;
+  font-size: 35px;
+}
+
+.contact-poste {
+  background-color: #FBEEDA;
+  padding: 0px 30px 30px 30px;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.pate {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.text-devant {
+  color: black;
+  font-size: 30px;
+  font-family: 'Abel', sans-serif;
+  padding: 20rem;
+}
+
+.text-devant-2 {
+  color: #e1c6b7;
+  font-size: 24px;
+  font-family: 'Abel', sans-serif;
+  padding-left: 15px;
+}
+
+.food {
+  height: 100%; /* La hauteur de la div est définie à 100% */
+  background-color: #5B613A;
+  padding: 20px; /* Vous pouvez ajuster la marge intérieure selon vos préférences */
+  display: flex; /* Utilisation de flexbox pour aligner verticalement le contenu */
+  flex-direction: column; /* Aligner le contenu en colonne */
+  justify-content: center; /* Centrer le contenu verticalement */
+}
+
+.text-devant-3 {
+  color:#e1c6b7;
+  font-size: 24px;
+  font-family: 'Abel', sans-serif;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.bienvenue {
+  font-family: 'Abel', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  line-height: 1.25;
+  margin: 0.15em 0px;
+  padding: 0px;
+  font-size: 100px;
+  text-align: center;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.pizza-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.pizza {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 10px;
+  opacity: 0;
+  transform: translateX(-100%) rotate(0deg);
+}
+
+/* Ajoutez des délais d'animation différents pour chaque pizza */
+.pizza:nth-child(1) {
+  animation: rotateAndMove 15s linear infinite 0s;
+}
+
+.pizza:nth-child(2) {
+  animation: rotateAndMove 15s linear infinite 2s;
+}
+
+.pizza:nth-child(3) {
+  animation: rotateAndMove 15s linear infinite 3s;
+}
+
+.pizza:nth-child(4) {
+  animation: rotateAndMove 15s linear infinite 4s;
+}
+
+.pizza:nth-child(5) {
+  animation: rotateAndMove 15s linear infinite 5s;
+}
+
+.pizza:nth-child(6) {
+  animation: rotateAndMove 15s linear infinite 6s;
+}
+
+.pizza:nth-child(7) {
+  animation: rotateAndMove 15s linear infinite 7s;
+}
+
+.pizza:nth-child(8) {
+  animation: rotateAndMove 15s linear infinite 8s;
+}
+
+@keyframes rotateAndMove {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(100%) rotate(360deg);
+  }
+}
+
+@media (max-width: 991px) {
+  .pizza {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+  }
+  .pizza-container {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.dicton {
+  font-weight: 800;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  line-height: 1.25;
+  padding: 0px;
+  font-size: 80px;
+  text-align: center;
+  color:#e1c6b7;
+  font-family: "Nixie one";
+}
+
+.btn-pizzas {
+  font-family: 'Abel', sans-serif;
+  font-size: 30px;
+  color: black;
+  border-color: #c69279;
+  background-color: #c69279;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.btn-pizzas-2 {
+  font-family: 'Abel', sans-serif;
+  font-size: 30px;
+  color:black;
+  border-color: #c69279;
+  background-color: #c69279;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 15px;
+}
+
+.btn-pizzas-3 {
+  font-family: 'Abel', sans-serif;
+  font-size: 30px;
+  color:white;
+  border-color: #c69279;
+  background-color: #c69279;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 15px;
+}
+
+.clients {
+  margin-top: 70px;
+  margin-bottom: 20px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.actus {
+  margin-top: 70px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.center-btn {
+  text-align: center;
+}
+
+.btn-insta {
+  display: inline-block;
+  padding: 10px 20px;
+  color: black;
+  border: 1px solid #212529;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  width: auto;
+}
+
+.btn-insta .fab {
+  font-size: 30px;
+}
+
+.btn-insta i {
+  margin-right: 10px; /* Espace entre l'icône et le texte */
+}
+
+.btn-text {
+  display: inline-block;
+  font-size: 27px;
+}
+
+.btn-insta:hover {
+  background-color:#FBEDDA; /* Couleur de fond au survol */
+}
+
+@media (max-width: 991px) {
+ .clients {
+   font-size: 30px;
+   margin: 40px 40px;
+ }
+ .actus {
+   margin: 0px;
+ }
+ .pizza {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 10px;
+  opacity: 0;
+  transform: translateX(-100%) rotate(0deg);
+}
+.recrute {
+  background-color: #FBEEDA;
+  padding: 30px 30px 20px 30px;
+  font-size: 40px;
+}
+
+.poste {
+  background-color: #FBEEDA;
+  padding: 0px 30px 30px 30px;
+  font-size: 18px;
+}
+.contact-poste {
+  background-color: #FBEEDA;
+  padding: 0px 30px 30px 30px;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+}
+
+footer {
+  background-color: #FBEEDA;
+  font-size: 18px;
+  margin: 0 auto;
+  padding: 40px;
+  border-top: 0.5px solid #f7d298;
+  font-family: 'Abel', sans-serif;
+}
+
+footer a {
+  color: black;
+  font-family: 'Abel', sans-serif;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color:#c69279;
+
+}
+
+.contact{
+  margin-bottom: 1rem;
+}
+.text{
+  font-family: 'Abel', sans-serif;
+  text-align: center;
+  font-size:45px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+.day {
+  margin-right: 10px;
+}
+
+.copyright {
+  text-align: center;
+  margin-bottom: 0px;
+  font-family: 'Abel', sans-serif;
+}
+
+a:visited {
+  color: black;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+
+}
+
+a:hover {
+  color: #c69279;
+  text-decoration: none;
+}
+
+.section-button {
+  color: black; /* Couleur du texte par défaut */
+}
+
+/* Styles pour les boutons après avoir été cliqués */
+.section-button:active,
+.section-button:focus { /* Vous pouvez ajouter :focus si nécessaire */
+  color: black; /* Couleur du texte lorsque le bouton est activé */
+}

@@ -1,0 +1,237 @@
+*, ::before, ::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Abel', sans-serif;
+  height: 100%;
+  background-color: #FBEEDA;
+}
+
+.row {
+  --bs-gutter-x: 0rem;
+}
+
+.custom-toggler  {
+  margin-right: 10px;
+}
+
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar {
+  background-color: #FBEEDA;
+  font-size:20px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+}
+
+
+.navbar a:hover {
+  text-decoration: none;
+  font-family: 'Abel', sans-serif;
+  font-size: 23px;
+}
+
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  font-family: 'Abel', sans-serif;
+}
+
+.text-devant-2 {
+  color:white;
+  font-size: 24px;
+  font-family: 'Abel', sans-serif;
+  text-align: center;
+}
+
+.text-devant-3 {
+  color:white;
+  font-size: 30px;
+  font-family: 'Abel', sans-serif;
+  text-align: center;
+}
+
+.dicton {
+  font-weight: 800;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  line-height: 1.25;
+  padding: 0px;
+  font-size: 90px;
+  text-align: center;
+  color:white;
+  font-family: "Nixie one";
+}
+
+.bienvenue {
+  font-family: 'Abel', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  line-height: 1.25;
+  padding: 0px;
+  font-size: 280px;
+  text-align: center;
+  color: black;
+  margin-top: 100px;
+  background-color:#D9A08B;
+}
+
+@media (max-width: 1284px) {
+  .bienvenue{
+    font-size: 50px !important;
+  }
+  .dicton{
+    font-size: 35px !important;
+    margin-top: 20px !important;
+  }
+  .container-pizza{
+    margin-top: 400px !important;
+    padding: 20px !important;
+  }
+  .text-resa{
+    margin: 0 !important
+  }
+  .food{
+    margin-top: 0 !important;
+    justify-content: space-around !important;
+  }
+  .text-devant-2{
+    margin: 10px;
+  }
+
+}
+
+.btn-pizzas-2 {
+  font-family: 'Abel', sans-serif;
+  font-size: 30px;
+  color: black;
+  border-color: #FBEEDA;
+  background-color: #FBEEDA;
+  margin-bottom: 20px;
+}
+
+.food {
+  height: 100%; /* La hauteur de la div est définie à 100% */
+  background-color: #5B613A; /* Vous pouvez ajuster la marge intérieure selon vos préférences */
+  display: flex; /* Utilisation de flexbox pour aligner verticalement le contenu */
+  flex-direction: column; /* Aligner le contenu en colonne */
+  justify-content: center; /* Centrer le contenu verticalement */
+}
+
+h2 {
+  margin-bottom: 0px;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color:#FBEEDA;
+}
+
+.contact{
+  margin-bottom: 1rem;
+}
+
+.circle-icon {
+  display: inline-block;
+    width: 50px; /* Ajustez la taille du cercle selon vos besoins */
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    line-height: 50px;
+    margin: 5px;
+    background-color: #FBEEDA /* Espace entre les icônes */
+}
+
+.fab {
+  font-size: 20px;
+  color: black;
+}
+
+footer {
+  background-color:#c69279;
+  font-size: 18px;
+  margin: 0 auto;
+  padding: 40px;
+  margin-top: 30px;
+  border-top: 0.5px solid #f7d298;
+  font-family: 'Abel', sans-serif;
+}
+
+.day {
+  margin-right: 10px;
+}
+
+.copyright {
+  text-align: center;
+  margin-bottom: 0px;
+  font-family: 'Abel', sans-serif;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+  font-family: 'Abel', sans-serif;
+  border: 1px solid #c69279;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 40px;
+  background-color: #FBEEDA;
+}
+
+.button-book {
+  text-align:center;
+  margin-top: 50px;
+}
+
+.link:hover {
+  color: #D9A08B;
+  font-family: 'Abel', sans-serif;
+}
+
+.text-resa {
+  font-family: 'Abel', sans-serif;
+  font-size: 30px;
+  margin: 100px;
+}
+
+a:visited {
+  color: black;
+}
+
+a {
+  color: black;
+}
+
+.section-button {
+  color: black; /* Couleur du texte par défaut */
+}
+
+/* Styles pour les boutons après avoir été cliqués */
+.section-button:active,
+.section-button:focus { /* Vous pouvez ajouter :focus si nécessaire */
+  color: black; /* Couleur du texte lorsque le bouton est activé */
+}

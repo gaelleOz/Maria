@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <!-- Racine du site -->
+   <url>
+      <loc>https://www.maria.pizza/</loc>
+   </url>
+
+   <!-- Page d'accueil -->
+   <url>
+      <loc>https://www.maria.pizza/index.html</loc>
+   </url>
+
+   <!-- Page Menu -->
+   <url>
+      <loc>https://www.maria.pizza/menu.html</loc>
+   </url>
+
+   <!-- Page Pizzas -->
+   <url>
+      <loc>https://www.maria.pizza/pizzas.html</loc>
+   </url>
+
+   <!-- Page Panozzos -->
+   <url>
+      <loc>https://www.maria.pizza/panozzos.html</loc>
+   </url>
+
+   <!-- Page Valeurs -->
+   <url>
+      <loc>https://www.maria.pizza/valeurs.html</loc>
+   </url>
+
+   <!-- Page Réservations -->
+   <url>
+      <loc>https://www.maria.pizza/resas.html</loc>
+   </url>
+
+</urlset>

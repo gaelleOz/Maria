@@ -1,0 +1,368 @@
+*, ::before, ::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Abel', sans-serif;
+  background-color: #FBEEDA;
+}
+
+.custom-toggler  {
+  margin-right: 10px;
+}
+
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.fixed-navbar .navbar {
+  background-color: #ffffff; /* Modifier la couleur de fond de la navbar fixée si nécessaire */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajouter une ombre si nécessaire */
+}
+
+.fixed-navbar .navbar-brand {
+  color: #000000; /* Modifier la couleur du texte de la navbar fixée si nécessaire */
+}
+
+p {
+  font-family: 'Abel', sans-serif;
+}
+
+.menu{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.container-menu {
+  background-color: #FBEEDA;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #5B613A;
+  transition: padding 0.3s ease;
+  width: 800px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+#menu {
+  height:100px;
+}
+
+.container-menu.no-padding {
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+}
+
+.category {
+ height: 80px;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 40px;
+}
+
+.category-item {
+  cursor: pointer;
+  font-family: "Nixie one";
+  padding: 30px;
+  margin: 40px 0;
+  font-weight: bold;
+  font-size: 40px;
+  background-color: #c69279;
+  border-bottom: 1px solid #c69279;
+  transition: background-color 0.3s ease;
+  width: 250px;
+  text-align: center; /* Centrez le texte horizontalement */
+  margin: 40px auto;
+}
+
+.category-item:hover {
+  background-color:  #FBEEDA;;
+}
+.navbar {
+  background-color: #FBEEDA;
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+}
+
+
+.navbar a:hover {
+  text-decoration: none;
+  font-family: 'Abel', sans-serif;
+  font-size: 23px;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  font-family: 'Abel', sans-serif !important;
+}
+
+.carte {
+  font-size: 80px;
+  font-family: "Nixie one";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("resources/home.jpg");
+  background-position: 20% 48%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  color:#ffffff;
+  height: 100vh;
+  padding-bottom: 70px;
+}
+
+.carte_2 {
+  font-size: 80px;
+  font-family: "Nixie one";
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.txt-banner {
+  font-size: 80px;
+}
+
+@media (max-width: 1200px) {
+  .carte {
+    height: 600px;
+    margin-top: 20px;
+    width: 100%;
+    background-position: 20% -101%;
+  }
+  .container-menu {
+    background-color: #FBEEDA;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #5B613A;
+    transition: padding 0.3s ease;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+  .txt-banner {
+    font-size: 50px;
+    letter-spacing: 0.09em;
+    margin: 0;
+  }
+  .txt-banner-2 {
+    display:none;
+  }
+  .carte_2 {
+    font-size: 30px;
+    height: 30vh;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+}
+.bounce-arrow {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+h2 {
+  margin-bottom: 0px;
+}
+
+h6 {
+  font-family: 'Abel', sans-serif;
+  font-size: 24px;
+}
+
+.marque {
+  font-family: 'Abel', sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 20px;
+  width: 100%;
+  background-color: #FBEEDA;
+}
+
+.product-card {
+  padding: 10px 0;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+
+@media (max-width: 576px) {
+  .product-card .ms-5 {
+    margin-left: 0 !important;
+  }
+}
+
+.product-card h4, h5 {
+  margin-top: 0;
+  font-family: 'Abel', sans-serif;
+}
+
+.product-card p {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 18px;
+
+}
+
+.product-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.burrata {
+  background-size: cover;
+}
+
+.product-image-beer {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: solid 1px #c69279;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card .d-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .product-card .d-flex h4 {
+    padding: 10px;
+    margin-left: 0px;
+  }
+
+  .product-image {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+
+/* CSS */
+/* CSS */
+.pizza-image {
+  /* Styles de base pour l'image de la pizza */
+  transform: rotate(0deg); /* Angle de départ */
+  transition: transform 5s; /* Transition pour une animation fluide */
+}
+
+.pizza-image.animate {
+  /* Styles spécifiques pour animer la rotation */
+  transform: rotate(360deg); /* Angle de fin (une rotation complète) */
+}
+
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color:#FBEEDA;
+}
+
+.contact{
+  margin-bottom: 1rem;
+}
+
+.day {
+  margin-right: 10px;
+}
+
+.circle-icon {
+  display: inline-block;
+    width: 50px; /* Ajustez la taille du cercle selon vos besoins */
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    line-height: 50px;
+    margin: 5px;
+    background-color: #FBEEDA /* Espace entre les icônes */
+}
+
+.fab {
+  font-size: 20px;
+  color: black;
+}
+
+footer {
+  background-color:#c69279;
+  font-size: 18px;
+  margin: 0 auto;
+  padding: 40px;
+  border-top: 0.5px solid #f7d298;
+  font-family: 'Abel', sans-serif;
+}
+
+
+.copyright {
+  text-align: center;
+  margin-bottom: 0px;
+  font-family: 'Abel', sans-serif;
+}
+
+a:visited {
+  color: black;
+}
+
+a {
+  color: black;
+}
+
+.section-button {
+  color: black; /* Couleur du texte par défaut */
+}
+
+/* Styles pour les boutons après avoir été cliqués */
+.section-button:active,
+.section-button:focus { /* Vous pouvez ajouter :focus si nécessaire */
+  color: black; /* Couleur du texte lorsque le bouton est activé */
+}

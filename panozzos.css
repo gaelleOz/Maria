@@ -1,0 +1,181 @@
+*, ::before, ::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Abel', sans-serif;
+  height: 100%;
+  background-color: #FBEEDA
+}
+
+.custom-toggler  {
+  margin-right: 10px;
+}
+
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.text-pizza {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.text-pizza-2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+
+@media (max-width: 768px) {
+  .text-pizza {
+    font-size: 36px;
+    margin: 60px;
+  }
+}
+
+.navbar {
+  background-color: #FBEEDA;
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 0;
+}
+.navbar a {
+  color: black;
+  text-decoration: none;
+  font-family: 'Abel', sans-serif;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+}
+
+.navbar a:hover {
+  text-decoration: none;
+  font-family: 'Abel', sans-serif;
+  font-size: 23px;
+}
+
+
+h2 {
+  margin-bottom: 0px;
+}
+
+.banner {
+  background-image: url("resources/spianata.jpg");
+  background-position: 40% 35%;
+  background-size: cover;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.pizza-image {
+  animation-name: rotatePizza; /* Nom de l'animation */
+  animation-duration: 4s; /* Durée de l'animation */
+  animation-iteration-count: infinite; /* Animation en boucle */
+  animation-timing-function: linear; /* Fonction de temporisation (linéaire pour une rotation constante) */
+}
+
+@keyframes rotatePizza {
+  0% {
+    transform: rotate(0deg); /* Angle de départ */
+  }
+  100% {
+    transform: rotate(360deg); /* Angle de fin (une rotation complète) */
+  }
+}
+
+.card-img-top {
+  width: 50%;
+  height: 40%;
+  object-fit: cover;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color:#FBEEDA;
+}
+
+.contact{
+  margin-bottom: 1rem;
+}
+
+.circle-icon {
+  display: inline-block;
+    width: 50px; /* Ajustez la taille du cercle selon vos besoins */
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    line-height: 50px;
+    margin: 5px;
+    background-color: #FBEEDA /* Espace entre les icônes */
+}
+
+.fab {
+  font-size: 20px;
+  color: black;
+}
+
+.rotate-image {
+  transform: rotate(90deg);
+}
+
+
+footer {
+  background-color: #c69279;
+  font-size: 18px;
+  margin: 0 auto;
+  padding: 40px;
+  margin-top: 30px;
+  border-top: 0.5px solid #f7d298;
+  font-family: 'Abel', sans-serif;
+}
+
+.day {
+  margin-right: 10px;
+}
+
+.copyright {
+  text-align: center;
+  margin-bottom: 0px;
+  font-family: 'Abel', sans-serif;
+}
+
+a:visited {
+  color: black;
+}
+
+a {
+  color: black;
+}
+
+.section-button {
+  color: black; /* Couleur du texte par défaut */
+}
+
+/* Styles pour les boutons après avoir été cliqués */
+.section-button:active,
+.section-button:focus { /* Vous pouvez ajouter :focus si nécessaire */
+  color: black; /* Couleur du texte lorsque le bouton est activé */
+}

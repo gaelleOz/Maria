@@ -244,6 +244,25 @@ object-fit: contain;
 z-index: 0;
 }
 
+.recrute {
+  background-color: #FBEEDA;
+  padding: 30px 30px 30px 30px;
+  font-size: 50px;
+}
+
+.poste {
+  background-color: #FBEEDA;
+  padding: 0px 30px 30px 30px;
+  font-size: 35px;
+}
+
+.contact-poste {
+  background-color: #FBEEDA;
+  padding: 0px 30px 30px 30px;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
 .pate {
   width: 100%;
   height: auto;
@@ -476,7 +495,23 @@ z-index: 0;
   opacity: 0;
   transform: translateX(-100%) rotate(0deg);
 }
+.recrute {
+  background-color: #FBEEDA;
+  padding: 30px 30px 20px 30px;
+  font-size: 40px;
+}
 
+.poste {
+  background-color: #FBEEDA;
+  padding: 0px 30px 30px 30px;
+  font-size: 18px;
+}
+.contact-poste {
+  background-color: #FBEEDA;
+  padding: 0px 30px 30px 30px;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
 }
 
 footer {
@@ -528,6 +563,11 @@ a {
   color: black;
   text-decoration: none;
 
+}
+
+a:hover {
+  color: #c69279;
+  text-decoration: none;
 }
 
 .section-button {

@@ -366,3 +366,7 @@ a {
 .section-button:focus { /* Vous pouvez ajouter :focus si nécessaire */
   color: black; /* Couleur du texte lorsque le bouton est activé */
 }
+
+li {
+  list-style-type: none;
+}

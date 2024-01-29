@@ -292,7 +292,8 @@
       imageElement.style.display = 'none';
       videoWrapper.classList.remove('d-none');
       rightBlock.innerHTML = "<video class='video-player' autoplay loop><source src='resources/vierge-ok-ok.mp4' type='video/mp4'></video>";
-      videoPlayer.pause(); // Pause la vidéo si elle était en lecture
+      videoPlayer.pause();
+      videoPlayer.style.display = "none"
     });
 
     // rightBlock.addEventListener("click", function () {
